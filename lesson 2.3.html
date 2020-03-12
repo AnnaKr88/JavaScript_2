@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cafe"></div>
+    <script>
+        class burger {
+            constructor(size, price, kcal) {
+                this.size = size;
+                this.price = price;
+                this.kcal = kcal;
+                this.staff = 'сыр';
+                this.pricePlus = price + 10;
+                this.kcalPlus = kcal + 15;
+                console.log(`Выбор: ${size}, ${price}p., ${kcal}kcal. Начинка: ${this.staff}. Общая стоимость: ${this.pricePlus}p. Общая каллорийность: ${this.pricePlus}kcal.`);
+            }            
+            
+//            content(n, priceS, kcalS) {
+//                let staff = [
+//                    {n: 'сыр', priceS: 10, kcalS: 15},
+//                    {n: 'салат', priceS: 20, kcalS: 5},
+//                    {n: 'картофель', priceS: 15, kcalS: 10}
+//                ];
+//                let total = this.price + priceS;
+//                console.log(`Начинка: ${n}, ${priceS}p., ${kcalS}kcal. ${total}`);
+//            }
+            
+            top() {
+                let topping = [
+                    {s: 'приправы', priceT: 15, kcalT: 0},
+                    {s: 'майонез', priceT: 20, kcalT: 5}
+                ];                
+            }
+            
+            
+                           
+        }
+
+         
+        let SB = new burger('small', 50, 20);       
+        let BB = new burger('big', 100, 40);
+//        BB.content('сыр', 10, 15)
+    </script>
+</body></html>
