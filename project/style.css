@@ -76,3 +76,39 @@ main {
     justify-self: end;
     grid-column: 1/3;
 }
+.product-item button:active {
+    box-shadow: none;
+}
+.product-item button:hover {
+    transform: scale(1.05);
+}
+
+#basket {
+    display: none;
+    grid-template-columns: 200px 1fr;
+}
+.addBasket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.addProduct p {
+    display: inline-block;
+}
+
+#plus, #minus {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    
+}
+#plus:hover {
+    cursor: pointer;
+}
+#minus:hover {
+    cursor: pointer;
+}
