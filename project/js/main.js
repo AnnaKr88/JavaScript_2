@@ -106,14 +106,11 @@ class basket {
 
     render() {
         const block = document.querySelector(this.container);
-        let i =0;
+        
         for (let product of this.contents) {
             let productObj = new addProduct(product);
             block.innerHTML += productObj.render();
-            let button = document.getElementById(`buy_${this.contents[i].id_product}`).onclick = function(){
-                console.log(event);
-            };
-            i++;
+            
         }
         
         
@@ -139,7 +136,7 @@ class addProduct {
 
 
 
-//let cart = new basket();
+let cart = new basket();
 
 
 
