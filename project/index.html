@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Интернет-магазин</title>
-  <link href="https://fonts.googleapis.com/css?family=Exo|Monda|Orbitron|Rajdhani&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Monda|Orbitron|Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <button class="btn-cart" type="button">BASKET</button>
+        <button class="btn-cart" type="button" onclick="openBasket()">КОРЗИНА</button>
+        <div id="basket">
+
+            <div class="total"></div>
+            <div class="addBasket"></div>
+            <button class="btn-cart" type="button" onclick="closeBasket()">Закрыть корзину</button>
+        </div>
     </header>
     <main>
         <div class="products"></div>
     </main>
-    
+
     <!--befoestart-->
-		<p>
-		<!--afterstart-->
-			<span></span>
-			<!--beforeend-->
-		</p>
-		<!--afterend-->
-    
-    <script src="js/main.js"></script>
+    <p>
+        <!--afterstart-->
+        <span></span>
+        <!--beforeend-->
+    </p>
+    <!--afterend-->
+
+    <script src="js/main.js" defer></script>
+
+    <script>
+        function openBasket(event) {
+
+            let basket = document.getElementById('basket');
+            basket.style = 'display: grid';
+        }
+
+        function closeBasket() {
+
+            let basket = document.getElementById('basket');
+            basket.style = 'display: none';
+        }
+
+    </script>
+
 </body>
+
 </html>
