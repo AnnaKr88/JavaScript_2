@@ -16,6 +16,8 @@
             border-radius: 10px;
         }
         
+        
+        
         button {
             display: block;
             width: 170px;
@@ -95,16 +97,16 @@ One: 'Sure. Bye.'<br>
             let text = document.getElementById('text').value;
             //console.log(name, tel, email);
             
-            let wrong = "background: AntiqueWhite";
+            let wrong = "background: #FFDAB9";
             let right = "background: #90EE90";
             var i =0;
             
             if(name) {
-                let regexp = /^([a-zа-я]+) ([a-zа-я]+)$/iu;
+                let regexp = /^[a-zа-я]+\s?[a-zа-я]+?$/iu;
                 
                 if(!name.match(regexp)) {
-                    let mess = 'Данные введены неверно!';
-                    document.getElementById('message').innerHTML = mess;
+                    let mess = 'Данные имени введены неверно!'+'<br>';
+                    document.getElementById('message').innerHTML += mess;
                     document.getElementById('name').style = wrong;
                     
                 } else {
@@ -117,8 +119,8 @@ One: 'Sure. Bye.'<br>
                 let regexp = /[\+][0-9][\(][\d]{3}[\)][\d]{3}-[\d]{4}/;
                 
                 if(!tel.match(regexp)) {
-                    let mess = 'Данные введены неверно!';
-                    document.getElementById('message').innerHTML = mess;
+                    let mess = 'Данные телефона введены неверно!'+'<br>';
+                    document.getElementById('message').innerHTML += mess;
                     document.getElementById('phone').style = wrong;
                     
                 } else {
@@ -131,8 +133,8 @@ One: 'Sure. Bye.'<br>
                 let regexp = /^[a-z0-9_.-]+@[a-z0-9_-]+\.[a-zа-я]{2,5}$/iu;
                 
                 if(!email.match(regexp)) {
-                    let mess = 'Данные введены неверно!';
-                    document.getElementById('message').innerHTML = mess;
+                    let mess = 'Данные почты введены неверно!'+'<br>';
+                    document.getElementById('message').innerHTML += mess;
                     document.getElementById('email').style = wrong;
                     
                 } else {
@@ -146,8 +148,10 @@ One: 'Sure. Bye.'<br>
             }
             
             if(i!=4) {
-                let mess = '<br>' + 'Введены не все данные!';
+                let mess = 'Введены не все данные!' + '<br>';
                     document.getElementById('message').innerHTML += mess;
+            } else {
+                document.getElementById('message').innerHTML = '';
             }
         }
         
