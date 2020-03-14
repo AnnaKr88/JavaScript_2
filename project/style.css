@@ -85,7 +85,13 @@ main {
 
 #basket {
     display: none;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns:  1fr;
+    
+    
+}
+#basket img {
+    width: 100px;
+    height: 100px;
 }
 .addBasket {
     display: flex;
@@ -95,20 +101,22 @@ main {
 .addProduct p {
     display: inline-block;
 }
+.cart-item {
+    text-align: left;
+}
 
-#plus, #minus {
-    display: inline-block;
+.del-btn {
+   display: inline-block;
     width: 20px;
     height: 20px;
     margin: 0 5px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    
 }
-#plus:hover {
-    cursor: pointer;
+.product-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
 }
-#minus:hover {
-    cursor: pointer;
+.product-quantity {
+    margin: 0;
+    display: inline-block;
 }
