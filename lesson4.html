@@ -63,6 +63,7 @@
         <button type="button" id="buttonSubmit">Submit</button>
 
     </form>
+    <div id="div"></div>
     <script>
         let text = `
 One: 'Hi Mary.'  <br>
@@ -88,7 +89,7 @@ One: 'Sure. Bye.'<br>
 
         //Задание 2
 
-        document.write('<b>' + 'Задание 2: ' + '</b>' + '<br>' + text.replace(/\B'\B|\B'\b/g, '"'));
+        document.write('<b>' + 'Задание 2: ' + '</b>' + '<br>' + text.replace(/\B'|'\B/g, '"'));
 
         //Задание 3
 
@@ -115,7 +116,7 @@ One: 'Sure. Bye.'<br>
                     document.getElementById('name').style = wrong;
                     
                 } else {
-                    document.getElementById('name').style = right;
+                    document.getElementById('div').innerHTML ='TEST';
                     i++;
                 }
             }

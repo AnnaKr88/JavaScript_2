@@ -5,20 +5,84 @@ header {
     padding: 20px;
     background: #F8F8FF;
     outline: 1px solid #ccc;
+    
+}
+form {
+    display: inline-flex;
+    margin-right: 50px;
 }
 
+
+header form button {
+    width: 35px;
+    margin-left: 10px;
+    
+}
 header button {
     background: #333333;
     color: #fff;
+    height: 35px;
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
     font-size: 15px;
     font-weight: 600;
-    padding: 1%;
+    width: 100px;
     font-family: 'Rajdhani', sans-serif;
 }
-
+#basket {
+    border: 1px solid;
+    margin-bottom: 10px;
+    
+}
+#basket img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px 10px 20px 0;
+}
+#addBasket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#basket h2 {
+    margin:0;
+    font-family: 'Rajdhani', sans-serif;
+    background: #333333;
+    color: #fff;
+    display: block;
+    padding: 5px 20px;
+   
+    
+}
+.product-basket {
+    display: inline-block;
+    width: 250px;
+    margin:10px 50px;
+    text-align: left;
+}
+.product-basket p {
+    margin: 5px 0;
+}
+.product-basket h3 {
+    margin: 5px 0;
+    display: inline-block;
+}
+#plus, #minus {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px;
+}
+#remove {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px;
+}
 main {
     width: calc(90% - 4%);
     margin: 0 auto;
@@ -83,21 +147,7 @@ main {
     transform: scale(1.05);
 }
 
-#basket {
-    display: none;
-    grid-template-columns:  1fr;
-    
-    
-}
-#basket img {
-    width: 100px;
-    height: 100px;
-}
-.addBasket {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 .addProduct p {
     display: inline-block;
 }
@@ -117,6 +167,34 @@ main {
     margin: 0;
 }
 .product-quantity {
-    margin: 0;
+    margin: 0 15px;
     display: inline-block;
+}
+
+.product-search{
+    width: 200px;
+    display: inline-block;
+    padding: 2%;
+}
+
+.product-search img {
+    width: 100px;
+    float: left;
+}
+.product-search button {
+    width: 65px;
+    height: 25px;
+    font-size: 13px;
+}
+.product-search button:hover{
+    box-shadow: 2px 1px 1px #000;
+}
+.product-search button:active {
+    box-shadow: none;
+}
+.product-search p {
+    margin: 0 0 5px;
+}
+.product-search h3 {
+    margin: 0 0 10px;
 }
