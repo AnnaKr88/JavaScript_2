@@ -35,7 +35,7 @@ header button {
     margin-bottom: 10px;
     
 }
-#basket img {
+.product-basket img {
     width: 100px;
     height: 100px;
     float: left;
