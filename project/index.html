@@ -11,64 +11,40 @@
 <body>
     <div id="app">
         <header>
-           
-           <div id="basket"><h2>Корзина</h2>
+
+<!--
+            <div id="basket">
+                <h2>Корзина</h2>
                 <div id="addBasket" v-bind:style="{display:isVisibleCart}" id="addBasket">
-                    
+
                 </div>
             </div>
-           
-            <form action="#" class="search-form">
-                <input type="text" class="search-field" v-model="searchLine">
-                <button class="btn-search" type="submit" @click='FilterGoods($event)'>
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <button class="btn-cart" type="button" @click="isVisibleCart!='block' ? isVisibleCart='block' : isVisibleCart='none'">КОРЗИНА</button>
+-->
+
             
-            <div id="searchField">
-                
-            </div>
+            <search :user-search="userSearch" @filter="filter"></search>
+            <button class="btn-cart" type="button" @click="showCart = !showCart">КОРЗИНА</button>
+            <cart :cart-items="cartItems"
+            :img="imgCart"
+            :visibility="showCart"
+            @remove="remove"></cart>
+
             
-            
+
+
         </header>
         <main>
-            <div class="products">
-                <div class="product-item" v-for="product of products" :key="product.id_product" :id="product.id_product">
-                    <img :src="imgCatalog" alt="Some img">
-                    <h3>{{product.product_name}}</h3>
-                    <p>{{product.price}} $</p>
-                    <button class="buy-btn" @click="addProduct(product)" :id="product.id_product">Купить</button>
-                </div>
-            </div>
+            <products :products="filtered" :img="imgProduct" @add-product="addProduct"></products>
         </main>
-
-        <!--befoestart-->
-        <p>
-            <!--afterstart-->
-            <span></span>
-            <!--beforeend-->
-        </p>
-        <!--afterend-->
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/SearchComponent.js"></script>
+    <script src="js/main.js"></script>
 
-<!--
-    <script>
-        function openBasket(event) {
 
-            let basket = document.getElementById('basket');
-            basket.style = 'display: grid';
-        }
+</body>
 
-        function closeBasket() {
-
-            let basket = document.getElementById('basket');
-            basket.style = 'display: none';
-        }
-    </script>
--->
-
-</body></html>
+</html>
