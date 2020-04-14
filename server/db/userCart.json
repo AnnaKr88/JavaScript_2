@@ -1,0 +1,30 @@
+{
+    "amount": 1,
+    "countGoods": 1,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 457,
+            "img": "img/DAI.jpg",
+            "product_name": "Dragon Age: Inquisition",
+            "genre": "RPG",
+            "price": 19.85
+        },
+        {
+            "quantity": 2,
+            "id_product": 652,
+            "img": "img/DR.jpg",
+            "product_name": "DiRT Rally",
+            "genre": "Sport",
+            "price": 13.56
+        },
+        {
+            "quantity": 1,
+            "id_product": 145,
+            "img": "img/DIS2.jpg",
+            "product_name": "Dishonored 2",
+            "genre": "Action",
+            "price": 12.36
+        }
+    ]
+}

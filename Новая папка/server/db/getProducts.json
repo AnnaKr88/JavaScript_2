@@ -1,0 +1,58 @@
+[
+    {
+        "id_product": 124,
+        "img": "img/ACO.jpg",
+        "product_name": "Assassin's Creed: Origins",
+        "genre": "Action",
+        "price": 50.25
+  },
+    {
+        "id_product": 457,
+        "img": "img/DAI.jpg",
+        "product_name": "Dragon Age: Inquisition",
+        "genre": "RPG",
+        "price": 19.85
+  },
+    {
+        "id_product": 652,
+        "img": "img/DR.jpg",
+        "product_name": "DiRT Rally",
+        "genre": "Sport",
+        "price": 13.56
+  },
+    {
+        "id_product": 145,
+        "img": "img/DIS2.jpg",
+        "product_name": "Dishonored 2",
+        "genre": "Action",
+        "price": 12.36
+  },
+    {
+        "id_product": 241,
+        "img": "img/GOF.jpg",
+        "product_name": "God of War",
+        "genre": "Action",
+        "price": 14.55
+  },
+    {
+        "id_product": 385,
+        "img": "img/WWH.jpg",
+        "product_name": "Witcher: Wild Hunt",
+        "genre": "RPG",
+        "price": 20.25
+  },
+    {
+        "id_product": 695,
+        "img": "img/POEC.jpg",
+        "product_name": "POE: Complete Edition",
+        "genre": "RPG",
+        "price": 25.45
+  },
+    {
+        "id_product": 483,
+        "img": "img/UFC.jpg",
+        "product_name": "EA SPORTS™ UFC®",
+        "genre": "Sport",
+        "price": 12.96
+  }
+]

@@ -1,0 +1,46 @@
+{
+    "amount": 1,
+    "countGoods": 1,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 4,
+            "category": 1,
+            "product_name": "Aviator RAY BAN RB 3025",
+            "price": 169,
+            "image": "/img/RB3025.jpg"
+        },
+        {
+            "quantity": 5,
+            "id_product": 10,
+            "category": 2,
+            "product_name": "Aviator Optics RB 6489",
+            "price": 109,
+            "image": "/img/RB6489.jpg"
+        },
+        {
+            "quantity": 4,
+            "id_product": 6,
+            "category": 1,
+            "product_name": "Wayfarer RAY BAN RB 2132",
+            "price": 199,
+            "image": "/img/RB2132.jpg"
+        },
+        {
+            "quantity": 2,
+            "id_product": 9,
+            "category": 2,
+            "product_name": "Erika OPAL Optics RB 7046",
+            "price": 119,
+            "image": "/img/RB7046.jpg"
+        },
+        {
+            "quantity": 8,
+            "id_product": 2,
+            "category": 1,
+            "product_name": "Erika RAY BAN RB 2180",
+            "price": 149,
+            "image": "/img/RB2180.jpg"
+        }
+    ]
+}
